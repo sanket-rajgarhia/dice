@@ -162,6 +162,7 @@ footer {
 @media screen and (orientation: portrait) and (min-height: 500px) {
   footer {
     bottom: 5px;
+    margin: 0;
     position: absolute;
     width: 100%;
   }
