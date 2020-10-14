@@ -147,7 +147,7 @@ footer {
   height: 50px;
   font-family: 'Indie Flower', cursive;
   font-size: calc(12px + (16 - 12) * ((100vw - 300px)/(1500 - 300)));
-  margin-top: 47%;
+  margin-top: 15%;
   text-align: center;
 }
 
