@@ -33,6 +33,13 @@ h1 {
   }
 }
 
+/* Applying Style to h1 tag - for scren width leass than 576px */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: calc(48px + (64 - 48)*((100vw - 300px)/(1500 - 300)));
+  }
+}
+
 /* ********* Body Main Section ********* */
 /* Style is applied when player name screen is displayed */
 .dice-container-player {
