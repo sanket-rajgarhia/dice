@@ -1,0 +1,154 @@
+/* ********* General Section ********* */
+/* Applying Style to the body of the web page */
+html, body {
+  background-color: #393E46;
+  margin: 0;
+  height: 100vh;
+}
+
+/* For Elements that act only as placeholder */
+.placeholder {
+  visibility: hidden;
+}
+
+/* ********* Body Header Section ********* */
+/* Applying Style to the header section */
+header {
+  text-align: center;
+}
+
+/* Applying Style to h1 tag */
+h1 {
+  color: #4ECCA3;
+  font-family: 'Lobster', cursive;
+  font-size: calc(128px + (128 - 108)*((100vw - 300px)/(1500 - 300)));
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+}
+
+/* Applying Style to h1 tag - for scren width leass than 850px */
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: calc(64px + (64 - 56)*((100vw - 300px)/(1500 - 300)));
+  }
+}
+
+/* ********* Body Main Section ********* */
+/* Style is applied when player name screen is displayed */
+.dice-container-player {
+  margin: auto;
+  width: 35%;
+}
+
+/* Styling player name screen when displayed in medium sized devices and less */
+@media screen and (max-width: 768px) {
+  .dice-container-player {
+    width: 50%;
+  }
+}
+
+/* Style is applied when dice screen in displayed */
+.dice-container-dice {
+  margin: auto;
+  width: 80%;
+}
+
+/* ********* Body Main - Form Screen and Dice Screen Toggle Support ********* */
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+/* ********* Body Main - Form Screen ********* */
+/* Applying Style to input label */
+.name-label {
+  color: #4ECCA3;
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1200 - 300)));
+}
+
+/* Applying Style to input - text form control  */
+.name-input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Applying Style to input - text form control when receives focus for input */
+.name-input:focus {
+  border: 2px solid;
+  border-color: yellow;
+}
+
+/* Applying Style to the Roll Dice Button */
+.button-roll-dice {
+  margin-left: 0;
+}
+
+/* Applying Style to the Roll Dice Button on mouse hover*/
+.button-roll-dice:hover {
+  background-color: #4ECCA3 ! important;
+  border-color: #000000 ! important;
+  color: #FFFFFF ! important;
+}
+
+/* ********* Body Main - Dice Section ********* */
+/* Applying Styles to the entire dice section */
+#play-dice {
+  text-align: center;
+}
+
+/* Applying Styles to the Player name appearing in the dice section */
+p {
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  font-size: calc(32px + (48 - 32) * ((100vw - 300px)/(1500 - 300)));
+}
+
+/* Applying Styles to the Player name appearing in the dice section - for screen size less than 768px */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: calc(16px + (32 - 16) * ((100vw - 300px)/(1500 - 300)));
+  }
+}
+
+/* Adjusting ths size and spacing of the dice */
+.dice-image {
+  width: 30%;
+}
+
+#div-roll-again {
+  padding-top: 5%;
+}
+
+/* ********* Body Footer Section ********* */
+/* Applying Style to the footer section inside the body section */
+footer {
+  bottom: 5px;
+  color: #EEEEEE;
+  font-family: 'Indie Flower', cursive;
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px)/(1500 - 300)));
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* ********* Runtime Added Classes Style Section ********* */
+/* Styles the h1 to highlight the name of the winner player */
+.winner {
+  color: #E00B0B;
+}
+
+/* Styles the h1 to delare a draw */
+.draw {
+  color: #FFFFFF;
+}
+
+/* Style the winner flag */
+.img-flag {
+  display: inline-block;
+  margin-left: 10px;
+  width: 10%;
+}

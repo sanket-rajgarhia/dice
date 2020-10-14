@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <!-- Head Section -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Dice Challenge</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap 4.5 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Material Design Bootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <!-- Custom Styles CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <!-- End Head Section -->
+
+    <!-- Body Section -->
+
+    <body>
+        <!-- Body Header -->
+        <header>
+            <h1 id="heading">Dice Challenge</h1>
+        </header>
+        <!-- End Body Header -->
+
+        <!-- Body Main -->
+        <main>
+
+            <!-- Main <div> -->
+            <!-- Can have class dice-container-player or dice-container-dice -->
+            <div id="main" class="container-fluid dice-container-player">
+
+                <!-- Form for player names input -->
+                <form id="players" class="visible">
+
+                    <!-- Player 1 Label and text input -->
+                    <div class="form-group row">
+                        <label for="player1" class="col-lg-3 col-form-label name-label">Player 1</label>
+                        <div class="col-lg-9 name-input-div">
+                            <input type="text" class="form-control name-input" id="player1" placeholder="Enter your name">
+                            <div id="player1-invalid-msg" class="invalid-feedback">Player name cannot be empty.</div>
+                        </div>
+                    </div>
+                    <!-- End Player 1 Label and text input -->
+
+                    <!-- Player 2 Label and text input -->
+                    <div class="form-group row">
+                        <label for="player2" class="col-lg-3 col-form-label name-label">Player 2</label>
+                        <div class="col-lg-9 name-input-div">
+                            <input type="text" class="form-control name-input" id="player2" placeholder="Enter your name">
+                            <div id="player2-invalid-msg" class="invalid-feedback">Player name cannot be empty.</div>
+                        </div>
+                    </div>
+                    <!-- End Player 2 Label and text input -->
+
+                    <!-- Roll Dice Button -->
+                    <div class="form-group row">
+                        <label for="player2" class="col-lg-3 col-form-label placeholder">placeholder</label>
+                        <div class="col-lg-9 name-input-div">
+                            <button id="btn-roll-dice" type="button" class="btn btn-outline-light button-roll-dice">Roll Dice</button>
+                        </div>
+                    </div>
+                    <!-- End Roll Dice Button -->
+                </form>
+                <!-- End Form for player names input -->
+
+                <!-- Dice Rolled Screen -->
+                <div id="play-dice" class="invisible animated wow fadeInRight">
+
+                    <!-- Dice Rolled Screen Row - 1 -->
+                    <div class="row">
+
+                        <div class="col-6">
+                            <p id="player-1-name">Player 1</p>
+                            <img id="img-dice-1" class="dice-image" src="">
+                        </div>
+
+                        <div class="col-6">
+                            <p id="player-2-name">Player 2</p>
+                            <img id="img-dice-2" class="dice-image" src="">
+                        </div>
+
+                    </div>
+                    <!-- End Dice Rolled Screen Row - 1 -->
+
+                    <!-- Dice Rolled Screen Row - 2 -->
+                    <div id="div-roll-again" class="row invisible">
+                        <button id="btn-roll-again" class="btn btn-outline-light button-roll-dice">Roll Again</button>
+                    </div>
+                    <!-- End Dice Rolled Screen Row - 2 -->
+
+                </div>
+                <!-- End Dice Rolled Screen -->
+            </div>
+            <!-- End Main <div> -->
+        </main>
+        <!-- End Body Main -->
+
+        <!-- Body Footer -->
+        <footer>
+            <a id="url" onclick="reload()">https:// 🎲 sanket-rajgarhia.github.io 🎲 /dice-roll/</a>
+        </footer>
+        <!-- End Body Footer -->
+
+        <!-- Bootstrap 4.5 scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+    </body>
+    <!-- End Body Section -->
+
+</html>
