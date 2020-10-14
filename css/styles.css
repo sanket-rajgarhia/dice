@@ -7,7 +7,7 @@ html, body {
 }
 
 /* Style for small screen where orientation is portrait and height is 568px or more */
-@media screen and (orientation: portrait) and (min-height: 568px) {
+@media screen and (orientation: portrait) and (min-height: 500px) {
   html, body {
     height: 100vh;
   }
@@ -158,8 +158,8 @@ footer {
   text-align: center;
 }
 
-/* Style for small screen where orientation is portrait and height is 568px or more */
-@media screen and (orientation: portrait) and (min-height: 568px) {
+/* Style for small screen where orientation is portrait and height is 500px or more */
+@media screen and (orientation: portrait) and (min-height: 500px) {
   footer {
     bottom: 5px;
     position: absolute;
