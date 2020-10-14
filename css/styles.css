@@ -3,7 +3,7 @@
 html, body {
   background-color: #393E46;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 /* For Elements that act only as placeholder */
