@@ -67,6 +67,9 @@ function rollAgain() {
   // Start the dice animation
   intervalTimer = setInterval(rollDiceAction, 300);
 
+  // Disable the button while the dice is rolling
+  document.getElementById('btn-roll-again').disabled = true;
+
   return;
 }
 
@@ -90,7 +93,8 @@ function rollDiceAction() {
   if (count === 12) {
     // Stop the timer being executed at the specified interval
     clearInterval(intervalTimer);
-
+    // Enable the dice roll again button
+    document.getElementById('btn-roll-again').disabled = false;
     // Set the winner result
     var winner = "";
     if (dice1 > dice2) {

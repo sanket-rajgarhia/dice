@@ -6,6 +6,13 @@ html, body {
   height: 100%;
 }
 
+/* Style for small screen where orientation is portrait and height is 568px or more */
+@media screen and (orientation: portrait) and (min-height: 568px) {
+  html, body {
+    height: 100vh;
+  }
+}
+
 /* For Elements that act only as placeholder */
 .placeholder {
   visibility: hidden;
@@ -149,6 +156,15 @@ footer {
   font-size: calc(12px + (16 - 12) * ((100vw - 300px)/(1500 - 300)));
   margin-top: 15%;
   text-align: center;
+}
+
+/* Style for small screen where orientation is portrait and height is 568px or more */
+@media screen and (orientation: portrait) and (min-height: 568px) {
+  footer {
+    bottom: 5px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 /* ********* Runtime Added Classes Style Section ********* */
