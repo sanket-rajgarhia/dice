@@ -50,7 +50,7 @@ h1 {
 /* Styling player name screen when displayed in medium sized devices and less */
 @media screen and (max-width: 768px) {
   .dice-container-player {
-    width: 50%;
+    width: 70%;
   }
 }
 
